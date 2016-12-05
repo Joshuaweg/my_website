@@ -1,3 +1,27 @@
 body{
 	color: black;
 }
+a.btn{
+	font-size: 1.2em;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 4px 15px;
+	transition: background-color .5s;
+}
+a.btn: hover{
+	background-color: rgba(0,0,0,.3);
+}
+header a.logo {
+	position: absolute;
+	display: block;
+	width: 160px;
+	height: 66px;
+	background: url() no-repeat 0 0;
+	background-size: contain;
+	top:15px;
+	left:20px;
+}
+header a span{
+	display: none;
+}
