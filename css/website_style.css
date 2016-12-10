@@ -3,6 +3,7 @@ body{
 	font-family: 'Aref Ruqaa', serif;
 	color: #3C3A3A;
 }
+a{text-align: center;}
 #page{
 	max-width: 900px;
 	margin: 0 auto;
@@ -25,10 +26,11 @@ header {
 position: relative;
 }
 header a.logo {
+z-index: 1;
 position: absolute;
 display: block;
-width: 300px;
-height: 150px;
+width: 150px;
+height: 100px;
 background: url(../images/mb_pencil_portrait.jpg) no-repeat 0 0;
 background-size: contain;
 top: 0px;
@@ -49,3 +51,101 @@ margin: 0 0 30px 0;
 header a span{
 	display: none;
 }
+section{
+	padding: 0 30px;
+
+}
+section::after{
+	content:'';
+	display: block;
+	clear: both;
+}
+section.main{
+	margin-top: 20 px;
+	margin-bottom: 30px;
+	padding:0;
+}
+section.main aside{
+		width: 33%;
+		float: left;
+		text-align: center;
+}
+section.main .content{
+	margin: 15px;
+	background: no-repeat center top; background-size: 75px 75px;
+	padding-top:85px;
+}
+section.main aside h3 a{color: #000; text-decoration: none;}
+section.main aside h3 a:hover{text-decoration: underline;}
+section.main aside .content.portrait_picture {background-image: url(../images/mb_pro_pic_true.jpg);}
+section.main aside .content.my_work {background-image: url(../images/mb_pro_pic_one.jpg);}
+section.main aside .content.sales_comms {background-image: url(../images/ralus.jpg);}
+
+footer{
+	font-size:.8ems;
+	margin: 40px;
+	color: #999;
+}
+footer .content{
+	display: inline;
+}
+footer a{
+	margin-left: 30px; color:#777;
+}
+footer a:visited{
+   color:#777;
+}
+footer a:hover{
+   color:#000;
+}
+nav{
+	background-color: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0px; left: 0px;
+	padding: 50px 0 0 0;
+	width: 100%;
+}
+nav ::after{
+	content:'';
+	display: block;
+	clear: both;
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0px;
+}
+nav ul li:hover{
+	background-color:#ccc;
+}
+nav ul li:hover> ul{
+	display:block;
+}
+nav ul li a{
+	display: inline-block;
+	color: white;
+	padding: 10px 20 px;
+	text-decoration: none;
+	width: 125px;
+	position: relative;
+}
+nav ul li a:visited {
+	color: white;
+}
+nav ul li a:hover {
+background-color: #c1c1c1;
+}
+nav ul ul{
+	position: absolute;
+	top: 100%;
+	background-color: #2b0306;
+	display: none;
+}
+nav ul ul li{
+	position: relative;
+}
+nav > ul {
+	padding-left: 200px;
+}
+nav>ul>li{float: left;}
+nav>ul>li>a{width: auto; padding:10px 20px 15px 15px;}
